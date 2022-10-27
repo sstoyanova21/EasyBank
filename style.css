@@ -1,23 +1,57 @@
+@font-face {
+    font-family: "Public Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/publicsans/v14/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuSJmJxAco.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Public Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/publicsans/v14/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Public Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/publicsans/v14/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z6JxAco.woff2) format('woff2');
+  }
+
 body {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Public Sans Light', sans-serif;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
 }
 .margin {
-    margin-left: 70px;
+    margin-left: 100px;
     margin-right: 50px;
 }
 .navbar {
     opacity: 1;
     background-color: rgba(255,255,255, 1);
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    padding-top: 20px;
+    border-bottom-width: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    left: 0px;
+    right: -10px;
 }
 .navbar-image {
     opacity: 1;
-    margin-right: 250px;
+    margin-right: 190px;
 }
 .navbar-item{
     margin-right: 40px;
@@ -31,6 +65,7 @@ a {
     letter-spacing: -0.11px;
     text-align: left;
     display: flex;
+    margin-left: 60px;
 }
 .intro {
     display: flex;
@@ -43,6 +78,12 @@ a {
     opacity: 1;
     background: linear-gradient(90deg, rgba(51, 211, 94, 1) 0%, rgba(42, 182, 217, 1) 100%);
     margin-left: 250px;
+    color: rgba(255,255,255,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Public Sans Bold';
 }
 h1 {
     opacity: 1;
@@ -53,7 +94,6 @@ h1 {
     letter-spacing: -1px;
     text-align: left;
     line-height: 64px; 
-    margin-left: 50px; 
 }
 .title-small {
     opacity: 1;
@@ -64,13 +104,18 @@ h1 {
     letter-spacing: -0.28px;
     text-align: left;
     line-height: 28px;
-    margin-left: 50px;
 }
 .block-button {
     border-radius: 22px;
     opacity: 1;
     background: linear-gradient(90deg, rgba(51, 211, 94, 1) 0%, rgba(42, 182, 217, 1) 100%);
-    margin-left: 50px;
+
+    color: rgba(255,255,255,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Public Sans Bold';
 }
 .container {
     opacity: 1;
@@ -82,23 +127,28 @@ h1 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.block-text{
+    margin-right: 0px;
+}
 .block-images {
     opacity: 1;
     position: relative;
+    width: 850px;
 }
 .box-down {
     position: relative;
     z-index: 1;
     height: 100px;
-    margin: 30px;
+    top: -250px;
+    right: -120px;
 }
 .box-up {
     position: absolute;
     z-index: 2;
     height: 60px;
     width: 70px;
-    left:270px;
-    top:-15px;
+    left: 295px;
+    top: -128px;
 }
 .title {
     opacity: 1;
@@ -171,6 +221,25 @@ p {
     opacity: 1;
     background-color: rgba(255,255,255, 1);
     margin-right: 30px;
+    width: 255px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+.text-block {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .text-opacity {
     opacity: 1;
@@ -181,6 +250,7 @@ p {
     letter-spacing: -0.16px;
     text-align: left;
     line-height: 18px;
+    margin-top: 0px;
 }
 h3 {
     opacity: 1;
@@ -211,7 +281,10 @@ h3 {
 }
 .flex-container {
     display: flex;
-    width: 666px;
+    width: 732px;
+}
+.footer-image-item {
+    width: 370px;
 }
 .footer-image {
     opacity: 1;
@@ -245,16 +318,23 @@ h3 {
     line-height: 26px;
 }
 .footer-button {
-    width: 666px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: end;
+    padding-right: 70px;
 }
 .button {
     border-radius: 22px;
     opacity: 1;
     background: linear-gradient(90deg, rgba(51, 211, 94, 1) 0%, rgba(42, 182, 217, 1) 100%);
     margin-bottom: 25px;
+    color: rgba(255,255,255,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Public Sans Bold';
 }
 .footer-text {
     opacity: 0.5;
